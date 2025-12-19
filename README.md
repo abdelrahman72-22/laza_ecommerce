@@ -1,16 +1,23 @@
-# laza_ecommerce
+# Laza – E-commerce Mobile App MVP
 
-A new Flutter project.
+## Project Overview
+A functional e-commerce mobile application built with Flutter and Firebase. 
+This project fulfills the requirements for the Mobile App Development Final Project (Fall 2025).
 
-## Getting Started
+## Features
+- **Auth:** Firebase Email/Password signup & login.
+- **Product Catalog:** Real-time data from Platzi Fake Store API.
+- **Cart:** Persistent Firestore cart with subtotal calculation.
+- **Favorites:** Ability to save products to a wishlist.
+- **Search:** Local filtering of the product catalog.
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- **Frontend:** Flutter (Dart)
+- **Backend:** Firebase Authentication & Cloud Firestore
+- **API:** Platzi Fake Store API
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+1. Clone the repository.
+2. Run `flutter pub get`.
+3. Ensure an emulator/device is connected.
+4. Run `flutter run`.
