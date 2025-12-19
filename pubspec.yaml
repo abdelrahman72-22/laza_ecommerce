@@ -1,0 +1,44 @@
+name: laza_ecommerce
+description: "A new Flutter project for the Laza E-commerce Mobile App."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # Firebase (Requirement 5.1, 5.5, 6.2)
+  firebase_core: ^3.10.1
+  firebase_auth: ^5.4.1
+  cloud_firestore: ^5.6.2
+
+  # API & Networking (Requirement 5.3, 6.1)
+  http: ^1.2.1
+
+  # State Management (To manage Cart and Favorites)
+  provider: ^6.1.2
+
+  # UI & Styling (Requirement 2 - Laza UI Kit style)
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Asset section - Uncomment and add your images folder if you use local assets
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+
+  # Adding Google Fonts helps match the Laza UI Kit style
