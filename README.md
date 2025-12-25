@@ -1,7 +1,4 @@
  Laza – E-commerce Mobile App (MVP)
-**Faculty of Computers and Data Science | Fall 2025**  
-**Cybersecurity Program**  
-**Course:** Mobile App Development
 
 ---
 
@@ -9,7 +6,7 @@
 Laza is a simplified, functional e-commerce Minimum Viable Product (MVP) based on the Laza UI Kit. This application is built using **Flutter** for a single codebase (iOS & Android) and leverages **Firebase** for backend services and **Platzi Fake Store API** for product data.
 
 ### Team Members:
-- [Your Name]
+- Abdelrahman Nashat
 - Abdelrahman ElNaggar
 
 ---
