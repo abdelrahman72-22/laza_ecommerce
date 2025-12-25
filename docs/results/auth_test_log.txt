@@ -1,0 +1,268 @@
+
+Execution of 1 workers started at 2025-12-24T21:24:49.824Z
+
+2025-12-24T21:24:49.840Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-12-24T21:24:49.843Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-12-24T21:24:49.844Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-12-24T21:24:49.844Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-12-24T21:24:49.844Z INFO @wdio/local-runner: Start worker 0-0 with arg: run appium_tests/wdio.conf.js
+2025-12-24T21:24:49.867Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-12-24T21:24:49.867Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-12-24T21:24:49.867Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+[0-0] 2025-12-24T21:24:50.941Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in Android on Android - file:///C:/Users/abdel/laza_ecommerce/appium_tests/specs/login.spec.js
+[0-0] 2025-12-24T21:24:51.144Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-12-24T21:24:51.144Z INFO @wdio/utils: Connecting to existing driver at http://localhost:4723/
+[0-0] 2025-12-24T21:24:51.156Z INFO webdriver: [POST] http://localhost:4723/session
+[0-0] App launched successfully!
+[0-0] 2025-12-24T21:25:09.016Z INFO webdriver: COMMAND elementClick("<Screenshot[base64]>")
+[0-0] 2025-12-24T21:25:09.017Z INFO webdriver: [POST] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9/click
+[0-0] 2025-12-24T21:25:09.017Z INFO webdriver: DATA {}
+[0-0] 2025-12-24T21:25:09.048Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: "The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again",
+[0-0]   stacktrace: "io.appium.uiautomator2.common.exceptions.ElementNotFoundException: The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again\n" +
+[0-0]     '\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:160)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.Click.safeHandle(Click.java:36)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n' +
+[0-0]     '\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n' +
+[0-0]     '\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n' +
+[0-0]     '\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n' +
+[0-0]     '\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n' +
+[0-0]     '\tat java.lang.Thread.run(Thread.java:920)\n'
+[0-0] }
+[0-0] 2025-12-24T21:25:09.049Z INFO webdriver: COMMAND elementSendKeys("<Screenshot[base64]>", "test@example.com")
+[0-0] 2025-12-24T21:25:09.049Z INFO webdriver: [POST] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9/value
+[0-0] 2025-12-24T21:25:09.049Z INFO webdriver: DATA {"text":"test@example.com"}
+[0-0] 2025-12-24T21:25:09.078Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: "The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again",
+[0-0]   stacktrace: "io.appium.uiautomator2.common.exceptions.ElementNotFoundException: The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoiZW1haWxGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again\n" +
+[0-0]     '\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:160)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.SendKeysToElement.safeHandle(SendKeysToElement.java:104)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n' +
+[0-0]     '\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n' +
+[0-0]     '\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n' +
+[0-0]     '\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n' +
+[0-0]     '\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n' +
+[0-0]     '\tat java.lang.Thread.run(Thread.java:920)\n'
+[0-0] }
+[0-0] 2025-12-24T21:25:09.079Z INFO webdriver: COMMAND elementClick("<Screenshot[base64]>")
+[0-0] 2025-12-24T21:25:09.079Z INFO webdriver: [POST] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9/click
+[0-0] 2025-12-24T21:25:09.080Z INFO webdriver: DATA {}
+[0-0] 2025-12-24T21:25:09.102Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: "The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again",
+[0-0]   stacktrace: "io.appium.uiautomator2.common.exceptions.ElementNotFoundException: The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again\n" +
+[0-0]     '\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:160)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.Click.safeHandle(Click.java:36)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n' +
+[0-0]     '\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n' +
+[0-0]     '\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n' +
+[0-0]     '\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n' +
+[0-0]     '\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n' +
+[0-0]     '\tat java.lang.Thread.run(Thread.java:920)\n'
+[0-0] }
+[0-0] 2025-12-24T21:25:09.102Z INFO webdriver: COMMAND elementSendKeys("<Screenshot[base64]>", "password123")
+[0-0] 2025-12-24T21:25:09.103Z INFO webdriver: [POST] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9/value
+[0-0] 2025-12-24T21:25:09.103Z INFO webdriver: DATA {"text":"password123"}
+[0-0] 2025-12-24T21:25:09.126Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: "The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again",
+[0-0]   stacktrace: "io.appium.uiautomator2.common.exceptions.ElementNotFoundException: The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoicGFzc3dvcmRGaWVsZCIsImtleVZhbHVlVHlwZSI6IlN0cmluZyJ9' is not present in the cache or has expired. Try to find it again\n" +
+[0-0]     '\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:160)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.SendKeysToElement.safeHandle(SendKeysToElement.java:104)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n' +
+[0-0]     '\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n' +
+[0-0]     '\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n' +
+[0-0]     '\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n' +
+[0-0]     '\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n' +
+[0-0]     '\tat java.lang.Thread.run(Thread.java:920)\n'
+[0-0] }
+[0-0] 2025-12-24T21:25:09.127Z INFO webdriver: COMMAND takeScreenshot()
+[0-0] 2025-12-24T21:25:09.127Z INFO webdriver: [GET] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/screenshot
+[0-0] 2025-12-24T21:25:09.598Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABDgAAAhwCAYAAADIu476AAAAAXNSR0IArs4c6...
+[0-0] 2025-12-24T21:25:09.601Z INFO webdriver: COMMAND elementClick("eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoibG9naW5CdXR0b24iLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ")
+[0-0] 2025-12-24T21:25:09.602Z INFO webdriver: [POST] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoibG9naW5CdXR0b24iLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ/click
+[0-0] 2025-12-24T21:25:09.602Z INFO webdriver: DATA {}
+[0-0] 2025-12-24T21:25:09.621Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: "The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoibG9naW5CdXR0b24iLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ' is not present in the cache or has expired. Try to find it again",
+[0-0]   stacktrace: "io.appium.uiautomator2.common.exceptions.ElementNotFoundException: The element identified by 'eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoibG9naW5CdXR0b24iLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ' is not present in the cache or has expired. Try to find it again\n" +
+[0-0]     '\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:160)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.Click.safeHandle(Click.java:36)\n' +
+[0-0]     '\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n' +
+[0-0]     '\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n' +
+[0-0]     '\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n' +
+[0-0]     '\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n' +
+[0-0]     '\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n' +
+[0-0]     '\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n' +
+[0-0]     '\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n' +
+[0-0]     '\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n' +
+[0-0]     '\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n' +
+[0-0]     '\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n' +
+[0-0]     '\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n' +
+[0-0]     '\tat java.lang.Thread.run(Thread.java:920)\n'
+[0-0] }
+[0-0] 2025-12-24T21:25:14.629Z INFO webdriver: COMMAND takeScreenshot()
+[0-0] 2025-12-24T21:25:14.630Z INFO webdriver: [GET] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f/screenshot
+[0-0] 2025-12-24T21:25:15.053Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABDgAAAhwCAYAAADIu476AAAAAXNSR0IArs4c6...
+[0-0] Screenshot saved to c:/Users/abdel/laza_ecommerce/docs/login_attempt.png
+[0-0] 2025-12-24T21:25:15.057Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-12-24T21:25:15.058Z INFO webdriver: [DELETE] http://localhost:4723/session/93fef865-af9c-4640-96ba-5d1940d5da7f
+[0-0] 2025-12-24T21:25:15.528Z INFO webdriver: RESULT null
+[0-0] PASSED in Android on Android - file:///C:/Users/abdel/laza_ecommerce/appium_tests/specs/login.spec.js
+2025-12-24T21:25:15.665Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[app-debug.apk Android #0-0] Running: app-debug.apk on Android
+[app-debug.apk Android #0-0] Session ID: 93fef865-af9c-4640-96ba-5d1940d5da7f
+[app-debug.apk Android #0-0]
+[app-debug.apk Android #0-0] » appium_tests\specs\login.spec.js
+[app-debug.apk Android #0-0] Laza Ecommerce App
+[app-debug.apk Android #0-0]    ✓ should launch the app and show the welcome screen
+[app-debug.apk Android #0-0]
+[app-debug.apk Android #0-0] 1 passing (11.5s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:25  
+
+2025-12-24T21:25:15.667Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-12-24T21:25:15.931Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-12-24T21:25:15.931Z INFO @wdio/local-runner: shutting down
+2025-12-24T21:25:15.931Z INFO @wdio/cli:launcher: Run onComplete hook
