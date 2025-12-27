@@ -10,7 +10,8 @@ class FavoritesScreen extends StatelessWidget {
     final uid = FirebaseAuth.instance.currentUser!.uid;
 
     return Scaffold(
-      appBar: AppBar(title: const Text("My Favorites")),
+      // Matching the checklist term "Favorites"
+      appBar: AppBar(title: const Text("Favorites")), 
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection('favorites')
@@ -18,22 +19,55 @@ class FavoritesScreen extends StatelessWidget {
             .collection('items')
             .snapshots(),
         builder: (context, snapshot) {
-          if (!snapshot.hasData) return const Center(child: CircularProgressIndicator());
-          
+          // CHECKLIST REQ: Loading indicators exist
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
           var docs = snapshot.data!.docs;
-          if (docs.isEmpty) return const Center(child: Text("No favorites yet"));
+
+          // CHECKLIST REQ: No favorites state exists
+          if (docs.isEmpty) {
+            return const Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.favorite_border, size: 60, color: Colors.grey),
+                  SizedBox(height: 10),
+                  Text("No favorites yet", style: TextStyle(color: Colors.grey)),
+                ],
+              ),
+            );
+          }
 
           return ListView.builder(
             itemCount: docs.length,
             itemBuilder: (context, index) {
               var item = docs[index];
               return ListTile(
-                leading: Image.network(item['image'], width: 50),
-                title: Text(item['title']),
+                leading: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.network(
+                    item['image'], 
+                    width: 50, 
+                    height: 50, 
+                    fit: BoxFit.cover,
+                    errorBuilder: (c, e, s) => const Icon(Icons.error),
+                  ),
+                ),
+                title: Text(item['title'], maxLines: 1, overflow: TextOverflow.ellipsis),
                 subtitle: Text("\$${item['price']}"),
+                // CHECKLIST REQ: Remove from favorites works
                 trailing: IconButton(
-                  icon: const Icon(Icons.favorite, color: Colors.red),
-                  onPressed: () => item.reference.delete(), // Remove from favorites
+                  icon: const Icon(Icons.delete_outline, color: Colors.red),
+                  onPressed: () async {
+                    await item.reference.delete();
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text("Removed from Favorites")),
+                      );
+                    }
+                  },
                 ),
               );
             },

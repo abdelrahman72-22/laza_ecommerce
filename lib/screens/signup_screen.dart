@@ -13,11 +13,11 @@ class _SignupScreenState extends State<SignupScreen> {
   final AuthService _auth = AuthService();
 
   void _signup() async {
-    final error = await _auth.signUp(_emailController.text, _passwordController.text);
+    final error = await _auth.signUp(_emailController.text.trim(), _passwordController.text.trim());
     if (error != null) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error)));
     } else {
-      Navigator.pop(context); // Go back to login after success
+      Navigator.pop(context);
     }
   }
 
@@ -32,7 +32,7 @@ class _SignupScreenState extends State<SignupScreen> {
             TextField(controller: _emailController, decoration: const InputDecoration(labelText: "Email")),
             TextField(controller: _passwordController, decoration: const InputDecoration(labelText: "Password"), obscureText: true),
             const SizedBox(height: 30),
-            ElevatedButton(onPressed: _signup, child: const Text("Sign Up")),
+            SizedBox(width: double.infinity, height: 50, child: ElevatedButton(onPressed: _signup, child: const Text("Create Account"))),
           ],
         ),
       ),
